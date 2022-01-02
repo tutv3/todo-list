@@ -1,0 +1,59 @@
+.page-title {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+.App {
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 1.5rem;
+}
+.mt-1 {
+  margin-top: 1rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.btn {
+  padding: 12px 24px;
+  text-align: center;
+  background-color: #f5f5f5;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  &:hover {
+    opacity: 0.95;
+  }
+  &.btn-success {
+    background-color: #5cb85c;
+    color: #fff;
+  }
+  &.btn-sm {
+    padding: 6px 16px;
+  }
+  &.btn-info {
+    background-color: #1fbcd4;
+    color: #fff;
+  }
+  &.btn-danger {
+    background-color: #d9534f;
+    color: #fff;
+  }
+  &.btn-flex {
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+    gap: 8px;
+  }
+}
+.page-title {
+  margin: 2.5rem 0;
+}
+
+.d-none {
+  display: none;
+}

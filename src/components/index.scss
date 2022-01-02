@@ -1,0 +1,113 @@
+.input-container {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  .input-item {
+    display: block;
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    font-size: 16px;
+    height: 50px;
+    &:focus {
+      outline: none;
+    }
+    &.block {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .input-title {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  textarea {
+    resize: vertical;
+    min-height: 200px;
+  }
+  .input-submit {
+    width: 100%;
+    display: block;
+  }
+  &.input-container__date {
+    position: relative;
+    .date-container {
+      position: absolute;
+      z-index: 10;
+      width: 100%;
+    }
+  }
+  .input-flex__container {
+    display: flex;
+    .input-item {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    button {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-left: none;
+    }
+  }
+  .error-message {
+    font-size: 14px;
+    color: #d9534f;
+    margin-top: 0.4rem;
+    display: inline-block;
+  }
+}
+
+.input-row {
+  display: flex;
+  gap: 1rem;
+  .input-container {
+    flex: 1;
+  }
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
+}
+
+.todo-item {
+  border: 1px solid #ccc;
+  margin-bottom: 1.5rem;
+  .summary {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    align-items: center;
+    .actions,
+    .title {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+  }
+  .todo-detail {
+    padding: 2.5rem 1.5rem;
+    border-top: 1px solid #ccc;
+  }
+}
+
+.bulk-action {
+  position: fixed;
+  bottom: 0;
+  background-color: #f5f5f5;
+  width: 100%;
+  left: 0;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  transition: all 0.25s ease-in-out;
+  transform: translateY(100%);
+  .actions {
+    display: flex;
+    gap: 1.5rem;
+  }
+  &.show {
+    transform: translateY(0);
+  }
+}
